@@ -1,0 +1,22 @@
+<form class= "submit-form" ng-submit= "$ctrl.addItem($ctrl.newItem)">
+    <input class= "top-input" type = "text" placeholder= "Product" ng-model= "$ctrl.newItem.product">
+    <input class= "top-input" type= "number" placeholder= "Price" ng-model= "$ctrl.newItem.price">
+    <input class= "top-input" type= "number" placeholder= "Quantity" ng-model= "$ctrl.newItem.quantity"> 
+    <button class= "add-btn">Add Item</button>
+</form>
+
+<section class= "grocery-list">
+    <section class= "update_section" ng-repeat="item in $ctrl.listOfItems">
+        <input class= "update_input" type="text" ng-blur= "$ctrl.updateItem(item)" ng-model= "item.product">
+        <input class= "update_input" type= "number" ng-blur= "$ctrl.updateItem(item)" ng-model= "item.price">
+        <input class= "update_input" type= "number" ng-blur= "$ctrl.updateItem(item)" ng-model= "item.quantity">
+        <button class="delete-btn" ng-click= "$ctrl.deleteItem(item.id);">X</button>
+    </section>
+</section>
+
+<!-- <section class= "update_section" ng-repeat="item in $ctrl.listOfItems">
+    <input class= "update_input" type="text" ng-blur= "$ctrl.updateItem(item)" ng-model= "item.product">
+    <input class= "update_input" type= "number" ng-blur= "$ctrl.updateItem(item)" ng-model= "item.price">
+    <input class= "update_input" type= "number" ng-blur= "$ctrl.updateItem(item)" ng-model= "item.quantity">
+    <button class="delete-btn" ng-click= "$ctrl.deleteItem(item.id);">X</button>
+</section> -->

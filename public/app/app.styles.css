@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v6/1cXxaUPXBpj2rGoU7C9WiHGFq8Kk1Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top-input {
+    width: 150px;
+    height: 20px;
+    font: 10px;
+}
+
+
+.update_input {
+    font-family: "Righteous";
+    border: none;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.add-btn {
+    font-family: "Lobster";
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.top-input {
+    font-family: "Lobster";
+    font-size: 18px;
+    padding: 5px;
+}
+
+.update_section {
+  
+   
+}
+
+.delete-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: larger;
+}
+
+button:hover{
+    background-color: lightseagreen;
+    color: white;
+}
+
+.grocery-list {
+    border: black 1px solid;
+    margin-top: 40px;
+    padding: 10px;
+}
